@@ -3,12 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --primary: #ACE1AF;
-  --secondary: darkred;
+  --primary: #6DC5D1;
   --bodyTheme: #000;
   --containerTheme: #18181b;
   --borderColor: #3f3f4666;
+  --sectionPadding: 3rem;
+  --grayBackground: #27272a;
+  --darkYellow: #f4a5603f;
+  --lightYellow: #f4a560bf;
+  /* --lightYellow: #FFDB5C; */
+  --linksColor: #f4f4f5;
 
+}
+
+.light {
+    --grayBackground: red;
+  
 }
 
 * {
@@ -16,6 +26,7 @@
 }
 body {
   background-color: var(--bodyTheme);
+  color: #fff;
 }
 
 :root {
@@ -30,7 +41,15 @@ body {
 
   & > * {
     border-bottom: 2px solid red;
-      padding: 0 3rem;
+    padding: 0 3rem;
+  }
+  .hero,.contact,.footer, main {
+    padding-top: var(--sectionPadding);
+    padding-bottom: var(--sectionPadding);
+  }
+  .header {
+    padding-top: 1rem;
+    padding-bottom: var(--sectionPadding);
   }
  
 }

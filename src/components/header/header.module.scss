@@ -1,0 +1,21 @@
+
+header {
+  ul {
+    background-color: var(--grayBackground);
+    li{
+      color: var(--linksColor);
+      &:hover {
+          color: var(--primary);
+          transition: color .3s;
+        }
+    }
+  }
+  .icon {
+    background-color: var(--grayBackground);
+    border-color: var(--darkYellow);
+    &:hover {
+      border-color: var(--lightYellow);
+    }
+    
+  }
+}
