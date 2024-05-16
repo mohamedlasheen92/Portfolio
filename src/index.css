@@ -9,6 +9,7 @@
   --borderColor: #3f3f4666;
   --sectionPadding: 3rem;
   --grayBackground: #27272a;
+  --iconColor: #a1a1aa;
   --darkYellow: #f4a5603f;
   --lightYellow: #f4a560bf;
   --sunYellow: #FFDB5C;
@@ -27,10 +28,11 @@
 body {
   background-color: var(--bodyTheme);
   color: #fff;
+  height: 7000px;
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: cursive;
 
 }
 .container {

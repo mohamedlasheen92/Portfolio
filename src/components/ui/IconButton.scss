@@ -1,0 +1,15 @@
+.icon {
+  background-color: var(--grayBackground);
+  border-color: var(--darkYellow);
+  color: var(--iconColor);
+
+  &:hover {
+    border-color: var(--lightYellow);
+    color: var(--linkColor);
+  }
+
+  .sun {
+    color: var(--sunYellow);
+  }
+
+}

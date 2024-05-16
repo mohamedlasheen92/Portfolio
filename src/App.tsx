@@ -7,6 +7,7 @@ import Main from "./components/main/Main";
 function App() {
   return (
     <>
+      {/* <div className="text-5xl">💚 💙 🙋 👋</div> */}
       <div className="container mx-auto">
         <Header />
         <Hero />

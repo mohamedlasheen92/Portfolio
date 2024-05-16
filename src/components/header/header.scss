@@ -1,6 +1,6 @@
 
 header {
-  ul {
+  nav {
     background-color: var(--grayBackground);
     li{
       color: var(--linksColor);
@@ -10,15 +10,30 @@ header {
         }
     }
   }
-  .icon {
-    background-color: var(--grayBackground);
-    border-color: var(--darkYellow);
-    &:hover {
-      border-color: var(--lightYellow);
+  .modal {
+    .popup {
+      background-color: var(--containerTheme);
+      animation: popup .7s;
+
+      a:hover {
+        color: var(--primary);
+          transition: color .3s;
+      }
     }
-    .sun {
-      color: var(--sunYellow);
-    }
-    
+  }
+}
+
+
+
+
+@keyframes popup {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
   }
 }
