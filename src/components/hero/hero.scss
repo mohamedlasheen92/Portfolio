@@ -1,3 +1,14 @@
-header h1 {
-  color: green;
+.hero {
+  .info {
+    > img {
+      border-color: var(--lightYellow);
+      box-shadow: 0rem 0rem 1.5rem  var(--lightYellow);
+    }
+    .title {
+      color: var(--title);
+    }
+    .description {
+      color: var(--graphColor);
+    }
+  }
 }
