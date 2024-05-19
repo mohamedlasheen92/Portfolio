@@ -1,11 +1,11 @@
 .icon {
   background-color: var(--grayBackground);
   border-color: var(--darkYellow);
-  color: var(--iconColor);
+  color: var(--graphColor);
 
   &:hover {
     border-color: var(--lightYellow);
-    color: var(--linkColor);
+    color: var(--titleColor);
   }
 
   .sun {

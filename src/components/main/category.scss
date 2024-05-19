@@ -1,0 +1,9 @@
+.category-btn {
+  background-color: var(--grayBackground);
+  color: var(--graphColor);
+
+  &:hover {
+    color: var(--titleColor);
+    
+  }
+}

@@ -3,7 +3,7 @@ header {
   nav {
     background-color: var(--grayBackground);
     li{
-      color: var(--linksColor);
+      color: var(--titleColor);
       &:hover {
           color: var(--primary);
           transition: color .3s;
@@ -12,6 +12,7 @@ header {
   }
   .modal {
     .popup {
+      color: var(--titleColor);
       background-color: var(--containerTheme);
       animation: popup .7s;
 

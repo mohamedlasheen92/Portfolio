@@ -9,15 +9,18 @@
   --borderColor: #3f3f4666;
   --sectionPadding: 3rem;
   --grayBackground: #27272a;
-  --iconColor: #a1a1aa;
+
   --darkYellow: #f4a5603f;
   --lightYellow: #f4a560bf;
   --sunYellow: #FFDB5C;
-  --linksColor: #f4f4f5;
-  --title: #f0f0f0;
+  /* --linksColor: #f4f4f5; */
+  --titleColor: #f0f0f0;
   --graphColor: #a1a1aa;
 
 }
+/**
+Section Title: text-lg sm:text-xl lg:text-2xl
+*/
 
 .light {
     --grayBackground: red;
@@ -53,7 +56,6 @@ body {
   }
   .header {
     padding-top: 1rem;
-    padding-bottom: var(--sectionPadding);
   }
  
 }
