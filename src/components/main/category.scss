@@ -1,9 +1,14 @@
 .category-btn {
   background-color: var(--grayBackground);
   color: var(--graphColor);
+  border: .1rem solid var(--grayBackground);
 
-  &:hover {
+  &:hover, &.active {
     color: var(--titleColor);
     
+  }
+  &.active {
+    border-color: var(--primary);
+    transition: all 150ms linear;
   }
 }
