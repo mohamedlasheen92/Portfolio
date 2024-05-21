@@ -1,4 +1,5 @@
-import { categories } from "../../data";
+import { categories, projects } from "../../data";
+import ProjectCard from "../ProjectCard";
 import CategoryButton from "./CategoryButton";
 import {  useState } from "react";
 
@@ -20,17 +21,22 @@ const Main = () => {
       onClickCategory={onClickCategory}
     />
   ));
+  const renderProjects = projects.map((project, idx) => {
+    return <ProjectCard key={idx} project={project} />
+  })
 
   return (
     <>
       <main className="flex flex-col lg:flex-row items-start gap-10 lg:gap-20">
-        <section className="left border border-green-400 flex flex-wrap lg:flex-col justify-center items-center gap-3">
+        <section className="left flex flex-wrap lg:flex-col justify-center items-center gap-3">
           {renderCategoriesBtns}
         </section>
-        <section className="right border border-blue-400 grow">
-          RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT
-          RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT RIGHT
-          RIGHT RIGHT
+        <section
+          className="right border border-blue-400 p-3 w-full 
+        grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3
+        gap-3 justify-center"
+        >
+          {renderProjects}
         </section>
       </main>
     </>
