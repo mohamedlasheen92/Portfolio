@@ -22,8 +22,11 @@ const Main = () => {
     />
   ));
   const renderProjects = projects.map((project, idx) => {
-    return <ProjectCard key={idx} project={project} />
+    if (activeBtn === "All") return <ProjectCard key={idx} project={project} />;
+    if (project.category === activeBtn) return <ProjectCard key={idx} project={project} />;
+    
   })
+  console.log(renderProjects);
 
   return (
     <>
