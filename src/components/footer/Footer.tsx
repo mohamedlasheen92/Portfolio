@@ -1,8 +1,9 @@
+import './footer.scss'
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
-        <h1>Footer</h1>
+      <footer className="footer text-center">
+        <p className="text-lg font-semibold tracking-widest">Made By Mohamed Lasheen</p>
       </footer>
     </>
   );
