@@ -25,7 +25,7 @@ const Hero = () => {
             client goals and exceed user expectations.
           </p>
         </section>
-        <section className="ani hidden lg:block border border-blue-500">
+        <section className="ani hidden lg:block">
           <Lottie animationData={devAnimation} style={{ width: 380 }} />
         </section>
       </section>
