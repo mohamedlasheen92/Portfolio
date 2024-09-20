@@ -2,24 +2,31 @@
   h3 {
     color: var(--titleColor);
   }
-  label, .desc {
+  /*label,*/ .desc {
     color: var(--graphColor);
   }
-  input, textarea {
-      background-color: var(--inputBackground);
+  .reach {
+    color: var(--graphColor);
+  }
+  .contacts > a:hover {
+    color: var(--primary);
+    transition: color .3s linear;
+  }
+  // input, textarea {
+  //     background-color: var(--inputBackground);
 
-      transition: border-color .2s linear;
-      border: 1px solid transparent;
-      padding: 8px 16px;
-      width: 100%;
+  //     transition: border-color .2s linear;
+  //     border: 1px solid transparent;
+  //     padding: 8px 16px;
+  //     width: 100%;
       
 
-      &:hover, &:focus {
-        border-color: var(--primary);
-      }
-    }
-  button {
-    background-color: var(--grayBackground);
+  //     &:hover, &:focus {
+  //       border-color: var(--primary);
+  //     }
+  //   }
+  // button {
+  //   background-color: var(--grayBackground);
    
-  }
+  // }
 }

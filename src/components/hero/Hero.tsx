@@ -1,23 +1,33 @@
+import Lottie from 'lottie-react';
 import me from '../../assets/me.png'
 import './hero.scss'
+import devAnimation from '../../../public/dev.json'
 
 const Hero = () => {
   return (
     <>
-      <section className="hero flex">
-        <section className="info border border-green-400 grow text-center md:text-left">
-          <img src={me} alt="me" className="w-32 border rounded-full mx-auto md:mx-0" />
-          <h1 className="title text-lg sm:text-xl lg:text-2xl mb-4 mt-9 tracking-widest font-bold">Full Stack Software Engineer</h1>
+      <section className="hero flex items-start space-x-20">
+        <section className="info  grow text-center md:text-left">
+          <img
+            src={me}
+            alt="me"
+            className="w-32 border rounded-full mx-auto md:mx-0"
+          />
+          <h1 className="title text-lg sm:text-xl lg:text-2xl mb-4 mt-9  font-bold">
+            Mohamed Lasheen - Full Stack Software Engineer
+          </h1>
           <p className="description font-semibold text-xs sm:text-sm md:text-base">
-            I’m Mohamed Lasheen, Dedicated and results-driven Full Stack
-            Developer with 2 years of experience in designing, implementing, and
-            maintaining complex software solutions. Adept at both front-end and
-            back-end development, with a passion for creating seamless user
-            experiences. Proven expertise in a variety of programming languages,
-            frameworks, and technologies.
+            I'm a passionate Full Stack Software Engineer with a knack for
+            creating efficient, scalable, and user-friendly software solutions.
+            With a deep understanding of both frontend and backend technologies,
+            I love to turn complex challenges into simple, elegant code. I aim
+            to deliver powerful, seamless, and modern applications that meet
+            client goals and exceed user expectations.
           </p>
         </section>
-        {/* <section className="ani border border-blue-500">Animation Part</section> */}
+        <section className="ani hidden lg:block border border-blue-500">
+          <Lottie animationData={devAnimation} style={{ width: 380 }} />
+        </section>
       </section>
     </>
   );

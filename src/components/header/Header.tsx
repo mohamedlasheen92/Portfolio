@@ -24,6 +24,9 @@ const Header = () => {
               <a href="/">Home</a>
             </li>
             <li className=" tracking-widest">
+              <a href="/">About</a>
+            </li>
+            <li className=" tracking-widest">
               <a href="/">Projects</a>
             </li>
             <li className=" tracking-widest">

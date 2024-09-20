@@ -1,12 +1,16 @@
 import { IProject } from "../interfaces"
 import courseCover from "../assets/course-cover.png"
+import productsBuilder from "../assets/products-builder.png"
+import reduxMovies from "../assets/redux-movies.png"
 
 export const categories: string[] = [
   "All",
-  "HTML CSS(SASS) JS",
-  "JavaScript",
-  "React",
-  "Node Express",
+  // "HTML CSS(SASS) JS",
+  // "JavaScript",
+  "Backend",
+  "Front End"
+  // "React",
+  // "Node Express",
 
   
   
@@ -14,87 +18,56 @@ export const categories: string[] = [
 
 export const projects: IProject[] = [
   {
-    imagePath: courseCover,
-    title: "Text Title 777",
+    imagePath: productsBuilder,
+    title: "Products Builder",
     description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "JavaScript",
+    category: "Front End",
+    code: "https://github.com/mohamedlasheen92/products-builder",
+    preview: "https://mohamedlasheen92.github.io/products-builder/",
   },
   {
-    imagePath: courseCover,
-    title: "Text Title 66",
+    imagePath: reduxMovies,
+    title: "Redux Movies App",
     description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "React",
+    category: "Front End",
+    code: "https://github.com/mohamedlasheen92/Redux_Movies_App",
+    preview: "https://reduxmoviesapp.netlify.app/",
   },
   {
-    imagePath: courseCover,
-    title: "Text Title 55",
+    //imagePath: courseCover,
+    title: "Task Manager",
     description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "React",
-  },
-  {
-    imagePath: courseCover,
-    title: "Text Title 44",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "Node Express",
-  },
-  {
-    imagePath: courseCover,
-    title: "Text Title 33",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "HTML CSS(SASS) JS",
-  },
-  {
-    imagePath: courseCover,
-    title: "Text Title 22",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "HTML CSS(SASS) JS",
-  },
-  {
-    imagePath: courseCover,
-    title: "Text Title 11",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "Node Express",
+    category: "Backend",
+    code: "https://github.com/mohamedlasheen92/nodejs-task-manager",
   },
   {
     imagePath: courseCover,
     title: "Text Title 40",
     description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "HTML CSS(SASS) JS",
+    category: "Front End",
   },
   {
     imagePath: courseCover,
     title: "Text Title 60",
     description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "HTML CSS(SASS) JS",
+    category: "Front End",
   },
   {
     imagePath: courseCover,
     title: "Text Title 50",
     description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "HTML CSS(SASS) JS",
+    category: "Front End",
   },
   {
     imagePath: courseCover,
     title: "Text Title 70",
     description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "Node Express",
+    category: "Backend",
   },
   {
     imagePath: courseCover,
     title: "Text Title 80",
     description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "Node Express",
-  },
-  {
-    imagePath: courseCover,
-    title: "Text Title 90",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "React",
-  },
-  {
-    imagePath: courseCover,
-    title: "Text Title 100",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "React",
+    category: "Backend",
   },
 ];

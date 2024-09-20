@@ -35,29 +35,41 @@ Section Title: text-lg sm:text-xl lg:text-2xl
 body {
   background-color: var(--bodyTheme);
   color: #fff;
-  height: 7000px;
+  /* height: 7000px; */
 }
 
 :root {
-  font-family: cursive;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
+.product-card .info {
+  color: var(--graphColor);
+}
+.product-card .links>a {
+  transition: all .3s linear;
+  cursor: pointer;
+}
+.product-card .links > a:hover {
+  color: var(--primary);
+  transform: scale(1.2);
+}
 .container {
-  width: 80%;
+  width: 90%;
   background-color: var(--containerTheme);
   min-height: 100vh;
   border: 1px solid var(--borderColor);
 
   & > * {
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid var(--borderColor);
     padding: 0 3rem;
   }
-  .hero,.contact,.footer, main {
+  .hero,.contact,.footer, main, .about {
     padding-top: var(--sectionPadding);
     padding-bottom: var(--sectionPadding);
   }
   .header {
     padding-top: 1rem;
+    padding-bottom: 1rem;
   }
  
 }

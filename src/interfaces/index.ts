@@ -1,6 +1,8 @@
 export interface IProject {
-  imagePath: string;
+  imagePath?: string;
   title: string;
-  description: string;
+  description?: string;
   category: string;
+  code?: string;
+  preview?: string;
 }
