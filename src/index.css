@@ -7,7 +7,7 @@
   --bodyTheme: #000;
   --containerTheme: #18181b;
   --borderColor: #3f3f4666;
-  --sectionPadding: 3rem;
+  --sectionPadding: 6rem;
   --grayBackground: #27272a;
 
   --darkYellow: #f4a5603f;
@@ -20,67 +20,121 @@
   --inputBackground: #3f3f4666;
 
 }
+
 /**
 Section Title: text-lg sm:text-xl lg:text-2xl
 */
 
 .light {
-    --grayBackground: red;
-  
+    --bodyTheme: #ffffff;
+      /* Light background */
+      --containerTheme: #f8f9fa;
+      /* Light container */
+      --borderColor: #d1d5db;
+      /* Light border color */
+      --grayBackground: #f3f4f6;
+      /* Light gray background */
+    
+      --darkYellow: #f4a560;
+      /* Dark yellow */
+      --lightYellow: #f4d04e;
+      /* Lighter yellow */
+      --titleColor: #1f2937;
+      /* Dark text color */
+      --graphColor: #4b5563;
+      /* Darker gray for graphs */
+    
+      --inputBackground: #ffffff;
+      /* White input background */
+
 }
 
 * {
-  margin: 0;padding: 0;box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bodyTheme);
   color: #fff;
+
   /* height: 7000px; */
 }
 
 :root {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
 }
+
+.head h3 {
+  color: var(--titleColor);
+}
+.head p {
+  color: var(--graphColor);
+}
+
 .product-card .info {
   color: var(--graphColor);
 }
-.product-card .links>a {
-  transition: all .3s linear;
-  cursor: pointer;
+.product-card .links, .product-card .title {
+  color: var(--titleColor);
 }
-.product-card .links > a:hover {
+
+.linkHover {
+  transition: all .3s linear;
+  /* cursor: pointer; */
+}
+
+.linkHover:hover {
   color: var(--primary);
   transform: scale(1.2);
 }
+
 .container {
   width: 90%;
   background-color: var(--containerTheme);
   min-height: 100vh;
   border: 1px solid var(--borderColor);
 
-  & > * {
+  &>* {
     border-bottom: 2px solid var(--borderColor);
     padding: 0 3rem;
+    padding-top: var(--sectionPadding);
+      padding-bottom: var(--sectionPadding);
   }
-  .hero,.contact,.footer, main, .about {
+
+  /* .hero,
+  .contact,
+  .footer,
+  main,
+  .about,
+  .skills, .services, .testimonials {
     padding-top: var(--sectionPadding);
     padding-bottom: var(--sectionPadding);
-  }
-  .header {
+  } */
+
+  .header, .footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
   }
- 
+  header {
+    border-bottom: none;
+  }
+
 }
 
 
 @media (max-width: 768px) {
   .container {
     width: 98%;
-    & > * {
-      padding: 0 1.5rem;
+
+    >* {
+      padding-left:  1.5rem;
+      padding-right:  1.5rem;
     }
   }
 }
-

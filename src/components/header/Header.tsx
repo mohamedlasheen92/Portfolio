@@ -4,33 +4,40 @@ import { useState } from "react";
 import IconButton from "../ui/IconButton";
 
 const Header = () => {
-
-  const [modal, setModal] = useState(false)
+  const [modal, setModal] = useState(false);
   const [iconMode, setIconMode] = useState(true);
-  const toggleMode = () => setIconMode(!iconMode);
+  const toggleMode = () => {
+    setIconMode(!iconMode);
+    if (document.body.classList.contains("light")) {
+      document.body.classList.remove("light");
+    } else {
+      document.body.classList.add("light");
+    }
+  };
 
-
-  
   return (
     <>
-      <header className="header flex items-center justify-between">
-        <IconButton displayed="sm:hidden">
-          <Menu onClick={() => setModal(true)} />
+      <header className="header flex items-center justify-between sticky top-0">
+        <IconButton onClick={() => setModal(true)} displayed="sm:hidden">
+          <Menu />
         </IconButton>
         <div className="hidden sm:block"></div>
         <nav className="hidden sm:block rounded-full">
           <ul className="flex space-x-5 py-3 px-7  text-lg font-semibold ">
             <li className=" tracking-widest">
-              <a href="/">Home</a>
+              <a href="#home">Home</a>
             </li>
             <li className=" tracking-widest">
-              <a href="/">About</a>
+              <a href="#about">About</a>
             </li>
             <li className=" tracking-widest">
-              <a href="/">Projects</a>
+              <a href="#skills">Skills</a>
             </li>
             <li className=" tracking-widest">
-              <a href="/">Contact</a>
+              <a href="#projects">Projects</a>
+            </li>
+            <li className=" tracking-widest">
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -46,17 +53,39 @@ const Header = () => {
               </button>
               <ul className="mt-4 text-lg font-semibold">
                 <li>
-                  <a href="/" className="block py-3 border-b-2 border-gray-800">
+                  <a
+                    href="#home"
+                    className="block py-3 border-b-2 border-gray-800"
+                  >
                     Home
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block py-3 border-b-2 border-gray-800">
+                  <a
+                    href="#about"
+                    className="block py-3 border-b-2 border-gray-800"
+                  >
+                    about
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#skills"
+                    className="block py-3 border-b-2 border-gray-800"
+                  >
+                    skills
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#projects"
+                    className="block py-3 border-b-2 border-gray-800"
+                  >
                     Projects
                   </a>
                 </li>
                 <li>
-                  <a href="/" className="block py-3 ">
+                  <a href="#contact" className="block py-3 ">
                     Contact
                   </a>
                 </li>

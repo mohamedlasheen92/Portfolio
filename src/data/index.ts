@@ -18,6 +18,22 @@ export const categories: string[] = [
 
 export const projects: IProject[] = [
   {
+    //imagePath: courseCover,
+    title: "NodeJS Product API",
+    description:
+      "A simple Node.js API to filter, sort, and paginate products using MongoDB.",
+    category: "Backend",
+    code: "https://github.com/mohamedlasheen92/NodeJS-Product-API",
+  },
+  {
+    //imagePath: courseCover,
+    title: "Task Manager",
+    description:
+      "API for managing tasks with CRUD operations, using async middleware and custom error handling.",
+    category: "Backend",
+    code: "https://github.com/mohamedlasheen92/nodejs-task-manager",
+  },
+  {
     imagePath: productsBuilder,
     title: "Products Builder",
     description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
@@ -33,31 +49,7 @@ export const projects: IProject[] = [
     code: "https://github.com/mohamedlasheen92/Redux_Movies_App",
     preview: "https://reduxmoviesapp.netlify.app/",
   },
-  {
-    //imagePath: courseCover,
-    title: "Task Manager",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "Backend",
-    code: "https://github.com/mohamedlasheen92/nodejs-task-manager",
-  },
-  {
-    imagePath: courseCover,
-    title: "Text Title 40",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "Front End",
-  },
-  {
-    imagePath: courseCover,
-    title: "Text Title 60",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "Front End",
-  },
-  {
-    imagePath: courseCover,
-    title: "Text Title 50",
-    description: "Lorem Lorem Lorem Lorem Lorem Lorem Lorem Lorem",
-    category: "Front End",
-  },
+
   {
     imagePath: courseCover,
     title: "Text Title 70",

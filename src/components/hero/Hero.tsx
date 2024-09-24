@@ -2,11 +2,12 @@ import Lottie from 'lottie-react';
 import me from '../../assets/me.png'
 import './hero.scss'
 import devAnimation from '../../../public/dev.json'
+import { Github, Linkedin } from 'lucide-react';
 
 const Hero = () => {
   return (
     <>
-      <section className="hero flex items-start space-x-20">
+      <section id='home' className="hero flex items-start space-x-20">
         <section className="info  grow text-center md:text-left">
           <img
             src={me}
@@ -24,6 +25,14 @@ const Hero = () => {
             to deliver powerful, seamless, and modern applications that meet
             client goals and exceed user expectations.
           </p>
+          <div className="links flex mt-10 space-x-5">
+            <a href="https://github.com/mohamedlasheen92" target="_blank" className='linkHover'>
+              <Github size={30} />
+            </a>
+            <a href="https://www.linkedin.com/in/mohamedlasheen9/" target="_blank" className='linkHover'>
+              <Linkedin size={ 30} />
+            </a>
+          </div>
         </section>
         <section className="ani hidden lg:block">
           <Lottie animationData={devAnimation} style={{ width: 380 }} />

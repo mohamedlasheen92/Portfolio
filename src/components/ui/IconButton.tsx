@@ -10,7 +10,7 @@ const IconButton = ({children,displayed = "block", ...rest}: IProps) => {
 
   return (
     <>
-      <button className={`icon p-2 rounded-full cursor-pointer border transition-colors duration-300 ${displayed}`} {...rest}>
+      <button className={`icon p-2 rounded-full border transition-colors duration-300 ${displayed}`} {...rest}>
         {children}
       </button>
     </>

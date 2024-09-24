@@ -1,11 +1,19 @@
 section.about {
-  .short {
-    color: var(--graphColor);
-  }
 
   .story p {
     color: var(--graphColor);
     margin-bottom: 2rem;
   }
+  .story .image {
+    // border: 2px solid red;
+    width: 25%;
+    height: 500px;
+    // background-image: url('../../assets/main.png');
+    // background-image: url('../../assets/only00.jpg');
+    background-image: url('../../assets/only.jpg');
+    background-size: cover;
+    background-position: 50%;
 
+    border-radius: 30% 40% 50% 40%;
+  }
 }

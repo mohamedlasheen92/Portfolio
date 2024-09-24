@@ -1,7 +1,9 @@
 import { categories, projects } from "../../data";
 import ProjectCard from "../ProjectCard";
 import CategoryButton from "./CategoryButton";
-import {  useState } from "react";
+import { useState } from "react";
+import "./main.scss";
+
 
 
 const Main = () => {
@@ -30,16 +32,18 @@ const Main = () => {
 
   return (
     <>
-      <main className="">
-        <h3 className="text-xl md:text-3xl font-semibold text-center">
-          Projects
-        </h3>
-        <p className="mt-3 mb-20 desc text-center short">
-          Check out my work and the projects I’ve developed
-        </p>
+      <main id="projects" className="">
+        <div className="head">
+          <h3 className="text-xl md:text-3xl font-semibold text-center">
+            Projects
+          </h3>
+          <p className="mt-3 mb-20 text-center">
+            Check out my work and the projects I’ve developed
+          </p>
+        </div>
 
         <section className="flex flex-col lg:flex-row items-start gap-10 lg:gap-20">
-          <section className="left flex flex-wrap  lg:flex-col  gap-3">
+          <section className="left flex flex-wrap w-full lg:w-fit justify-center  lg:flex-col  gap-3">
             {renderCategoriesBtns}
           </section>
           <section

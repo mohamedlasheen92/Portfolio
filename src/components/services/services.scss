@@ -1,0 +1,12 @@
+.services {
+  .service-card {
+    background-color: var(--grayBackground);
+
+    h4 {
+      color: var(--titleColor);
+    }
+    p{
+      color: var(--graphColor);
+    }
+  }
+}

@@ -13,15 +13,15 @@ const ProjectCard = ({ project  }: IProps) => {
       <div className="border border-gray-500 max-w-md mx-auto product-card">
         {imagePath && <img src={imagePath} alt={title} className="" />}
         <div className="desc p-2">
-          <h3 className="text-lg">{title}</h3>
+          <h3 className="text-lg font-semibold tracking-wider title">{title}</h3>
           {description && <p className="my-2 info">{description}</p>}
 
           <div className="links flex space-x-5">
-            <a href={code} target="_blank">
+            <a href={code} target="_blank" className="linkHover">
               <Github />
             </a>
             {preview && (
-              <a href={preview} target="_blank">
+              <a href={preview} target="_blank" className="linkHover">
                 <Link />
               </a>
             )}
